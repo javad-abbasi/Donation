@@ -1,0 +1,9 @@
+pluginManagement { includeBuild("../node_modules/@react-native/gradle-plugin") }
+plugins { id("com.facebook.react.settings") }
+extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
+rootProject.name = 'Test'
+include ':app'
+includeBuild('../node_modules/@react-native/gradle-plugin')
+
+// include ':rnmapbox_maps'
+// project(':rnmapbox_maps').projectDir = new File(rootDir, '../node_modules/@rnmapbox/maps/android')
